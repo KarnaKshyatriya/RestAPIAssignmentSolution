@@ -102,6 +102,7 @@ public class EmployeeServiceImplementation implements EmployeeService {
 	@Override
 	public User saveUser(User theuser) {
 		theuser.setPassword(encoder().encode(theuser.getPassword()));
+		//System.out.println(theuser.getPassword()+"  cvb  "+theuser);
 		return userRepository.save(theuser);
 	}
 

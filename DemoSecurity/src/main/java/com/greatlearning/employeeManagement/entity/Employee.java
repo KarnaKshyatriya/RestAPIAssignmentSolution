@@ -24,9 +24,20 @@ public class Employee {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
+	/*
+	 * public Employee(String firstName, String lastName, String email) { super();
+	 * this.firstName = firstName; this.lastName = lastName; this.email = email; }
+	 */
+
 	public Integer getId() {
 		return id;
 	}
+
+	/*
+	 * public Employee(Integer id, String firstName, String lastName, String email)
+	 * { super(); this.id = id; this.firstName = firstName; this.lastName =
+	 * lastName; this.email = email; }
+	 */
 
 	public void setId(Integer id) {
 		this.id = id;
